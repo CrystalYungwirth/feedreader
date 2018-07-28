@@ -32,17 +32,27 @@ $(function() {
      * in the allFeeds object and ensures it has a URL defined
      * and that the URL is not empty.
      */
-    it('URLs are defined and are not empty', function() { //RSS Feeds URLs are defined and are not empty
-      allFeeds.forEach((test) => {
-        expect(test.url).toBeDefined();
-        expect(test.url.length).not.toBe(0);
+    it('urls are defined and are not empty', function() { //RSS Feeds urls are defined and are not empty
+      allFeeds.forEach((feed) => {
+        const test = feed.url;
+
+        expect(test).toBeDefined();
+        expect(test.length).not.toBe(0);
       });
     });
 
     /* TODO: Write a test that loops through each feed
      * in the allFeeds object and ensures it has a name defined
      * and that the name is not empty.
-     */
+     // */
+     it('names are defined and are not empty', function() { //RSS Feeds names are defined and are not empty
+       allFeeds.forEach((feed) => {
+         const test = feed.name;
+
+         expect(test).toBeDefined();
+         expect(test.length).not.toBe(0);
+       });
+     });
   });
 
 
