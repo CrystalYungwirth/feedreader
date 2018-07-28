@@ -63,7 +63,7 @@ function init() {
                  /* Loop through the entries we just loaded via the Google
                   * Feed Reader API. We'll then parse that entry against the
                   * entryTemplate (created above using Handlebars) and append
-                  * the resulting HTML to the list of entries on the page.
+                  * the resulting HTML to the list o f entries on the page.
                   */
                  entries.forEach(function(entry) {
                      container.append(entryTemplate(entry));
