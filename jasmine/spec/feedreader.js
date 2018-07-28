@@ -64,7 +64,7 @@ $(function() {
      * the CSS to determine how we're performing the
      * hiding/showing of the menu element.
      */
-    it('is hidden by default', () => {
+    it('is hidden by default', () => { //The menu is hidden by default
       expect(document.body).toHaveClass('menu-hidden');
     });
 
@@ -73,29 +73,36 @@ $(function() {
      * should have two expectations: does the menu display when
      * clicked and does it hide when clicked again.
      */
-     it('changes visibility when the menu icon is clicked', () => {
-       const toggleMenu = document.querySelector('.menu-icon-link');
+    it('changes visibility when the menu icon is clicked', () => { //The menu changes visibiility when the menu icon is clicked
+      const toggleMenu = document.querySelector('.menu-icon-link');
 
-       //Check that menu shows
-       toggleMenu.click();
-       expect(document.body).not.toHaveClass('menu-hidden');
+      //Check that menu shows
+      toggleMenu.click();
+      expect(document.body).not.toHaveClass('menu-hidden');
 
-       //Check that menu hides
-       toggleMenu.click();
-       expect(document.body).toHaveClass('menu-hidden');
-     });
+      //Check that menu hides
+      toggleMenu.click();
+      expect(document.body).toHaveClass('menu-hidden');
+    });
   });
 
   /* TODO: Write a new test suite named "Initial Entries" */
   describe('Initial Entries', () => {
     /* TODO: Write a test that ensures when the loadFeed
      * function is called and completes its work, there is at least
-
      * a single .entry element within the .feed container.
      * Remember, loadFeed() is asynchronous so this test will require
      * the use of Jasmine's beforeEach and asynchronous done() function.
      */
 
+    beforeEach((done) => {
+      loadFeed(0, done);
+    });
+
+    it('is at least a single .entry in .feed', () =>{
+      const feed = document.querySelector('.feed .entry').children.length;
+      expect(feed).toBeGreaterThan(0);
+    });
   });
 
   /* TODO: Write a new test suite named "New Feed Selection" */
