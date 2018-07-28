@@ -56,7 +56,7 @@ $(function() {
   });
 
 
-  /* TODO: Write a new test suite named "The menu" */
+  /* TODO: Write a new test suite named 'The menu' */
   describe('The menu', () => {
 
     /* TODO: Write a test that ensures the menu element is
@@ -86,7 +86,7 @@ $(function() {
     });
   });
 
-  /* TODO: Write a new test suite named "Initial Entries" */
+  /* TODO: Write a new test suite named 'Initial Entries' */
   describe('Initial Entries', () => {
     /* TODO: Write a test that ensures when the loadFeed
      * function is called and completes its work, there is at least
@@ -99,18 +99,33 @@ $(function() {
       loadFeed(0, done);
     });
 
-    it('is at least a single .entry in .feed', () =>{
+    it('is at least a single .entry in .feed', () => {
       const feed = document.querySelector('.feed .entry').children.length;
       expect(feed).toBeGreaterThan(0);
     });
   });
 
-  /* TODO: Write a new test suite named "New Feed Selection" */
+  /* TODO: Write a new test suite named 'New Feed Selection' */
   describe('New Feed Selection', () => {
-    //
-    //   /* TODO: Write a test that ensures when a new feed is loaded
-    //    * by the loadFeed function that the content actually changes.
-    //    * Remember, loadFeed() is asynchronous.
-    //    */
+
+    /* TODO: Write a test that ensures when a new feed is loaded
+     * by the loadFeed function that the content actually changes.
+     * Remember, loadFeed() is asynchronous.
+     */
+    let oldFeed;
+
+    beforeEach((done) => {
+      loadFeed(0, function() {
+        oldFeed = document.querySelector('.feed').innerHTML;
+        loadFeed(1, function() {
+          done();
+        });
+      });
+    });
+
+    it('content actually changes', () => { //New Feed Selection content actually changes
+      const newFeed = document.querySelector('.feed').innerHTML;
+      expect(newFeed).not.toEqual(oldFeed);
+    });
   });
 }());
