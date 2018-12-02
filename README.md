@@ -14,13 +14,13 @@ This project is part of the 2018 Udacity Front-End Nanodegree program. I was pro
 
 ### Test
 ####Online
-1. Visit [Crystal's Feed Reader Testing Project Live](https://crystalyungwirth.github.io/feedreader/) is hosted through GitHub pages.
+1. Visit [Crystal's Feed Reader Testing Project Live](https://crystalyungwirth.github.io/udacity-fend-p4-feedreader/) is hosted through GitHub pages.
 2. Testing starts automatically.
 
 ####Clone
 1. Clone game to your local machine
 ```
-$ git clone https://github.com/CrystalYungwirth/feedreader.git
+$ git clone https://github.com/CrystalYungwirth/udacity-fend-p4-feedreader.git
 ```
 2. Open ```index.html``` in your browser.
 3. Test starts automatically.
