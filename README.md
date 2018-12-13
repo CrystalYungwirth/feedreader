@@ -13,11 +13,11 @@
 This project is part of the 2018 Udacity Front-End Nanodegree program. I was provided starter code, you can view the original here: [udacity-nanodegree-feedreader](https://github.com/udacity/frontend-nanodegree-feedreader.git).
 
 ### Test
-####Online
+#### Online
 1. Visit [Crystal's Feed Reader Testing Project Live](https://crystal-dawn.github.io/udacity-fend-p4-feedreader/) is hosted through GitHub pages.
 2. Testing starts automatically.
 
-####Clone
+#### Clone
 1. Clone game to your local machine
 ```
 $ git clone https://github.com/crystal-dawn/udacity-fend-p4-feedreader.git
@@ -25,7 +25,7 @@ $ git clone https://github.com/crystal-dawn/udacity-fend-p4-feedreader.git
 2. Open ```index.html``` in your browser.
 3. Test starts automatically.
 
-####Download
+#### Download
 1. Download zip file.
 2. Open ```index.html``` in your browser.
 3. Test starts automatically
