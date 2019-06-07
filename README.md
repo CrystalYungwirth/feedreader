@@ -14,7 +14,7 @@ This project is part of the 2018 Udacity Front-End Nanodegree program. I was pro
 
 ### Test
 #### Online
-1. Visit [Crystal's Feed Reader Testing Project Live](https://crystal-dawn.github.io/udacity-fend-p4-feedreader/) is hosted through GitHub pages.
+1. Visit [Crystal's Feed Reader Testing Project Live](https://crystal-dawn.github.io/feedreader/) is hosted through GitHub pages.
 2. Testing starts automatically.
 
 #### Clone
